@@ -58,20 +58,20 @@
             <h3 class="filter-feature-title">Жирность:</h3>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="none">
-                0%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="fat-none" value="none">
+                <label for="fat-none">0%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="before-10" checked>
-                до 10%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="fat-before-10" value="before-10" checked>
+                <label for="fat-before-10">до 10%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="before-30">
-                до 30%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="fat-before-30" value="before-30">
+                <label for="fat-before-30">до 30%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="above-30">
-                выше 30%
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="fat-above-30" value="above-30">
+                <label for="fat-above-30">выше 30%</label>
               </li>
             </ul>
           </div>
@@ -79,24 +79,24 @@
             <h3 class="filter-feature-title">Наполнители:</h3>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" checked>
-                шоколадные
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="checkbox-chocolate" checked>
+                <label for="checkbox-chocolate">шоколадные</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powders" checked>
-                сахарные присыпки
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powders" id="checkbox-sugar-powders" checked>
+                <label for="checkbox-sugar-powders">сахарные присыпки</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits">
-                фрукты
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits" id="checkbox-fruits">
+                <label for="checkbox-fruits">фрукты</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups" >
-                сиропы
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups" id="checkbox-syrups">
+                <label for="checkbox-syrups">сиропы</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams">
-                джемы
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="checkbox-jams">
+                <label for="checkbox-jams">джемы</label>
               </li>
             </ul>
           </div>
@@ -218,17 +218,35 @@
     </footer>
 
 
+    <form class="search" action="https://echo.htmlacademy.ru" method="get">
+      <label class="visually-hidden" for="param">Что ищем?</label>
+      <input class="field" type="text" name="param" id="param" placeholder="Что ищем?">
+      <input class="visually-hidden" type="submit" value="Найти">
+    </form>
+
+
+    <form class="login" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="login">Электронная почта</label>
+      <input class="field" type="text" name="login" id="login" placeholder="Электронная почта">
+      <label class="visually-hidden" for="password">Пароль</label>
+      <input class="field" type="password" name="password" id="password" placeholder="Пароль">
+      <input class="button" type="submit" value="Войти">
+      <a class="login-link" href="#">Забыли пароль?</a>
+      <a class="login-link" href="#">Новая регистрация</a>
+    </form>
+
+
     <div class="basket">
       <table class="basket-table">
         <tr>
-          <td><img src="img/cross-small.svg" width="11" height="11" alt="Закрыть"></td>
+          <td><a href="#"><img src="img/cross-small.svg" width="11" height="11" alt="Удалить"></a></td>
           <td><img src="img/image01.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
           <td>Пломбир с апельсиновым джемом</td>
           <td>1,5 кг х <span>200 руб.</span></td>
           <td>300 руб.</td>
         </tr>
         <tr>
-          <td><img src="img/cross-small.svg" width="11" height="11" alt="Закрыть"></td>
+          <td><a href="#"><img src="img/cross-small.svg" width="11" height="11" alt="Удалить"></a></td>
           <td><img src="img/image03.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
           <td>Клубничный пломбир с присыпкой из белого шоколада</td>
           <td>1,5 кг х <span>300 руб.</span></td>

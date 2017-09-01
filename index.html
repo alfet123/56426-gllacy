@@ -35,7 +35,7 @@
 
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
-        <form action="#" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <input type="radio" name="toggle" id="item-1" value="item-1" checked>
           <label for="item-1">Крем-брюле и пломбир с малиновым джемом</label>
           <input type="radio" name="toggle" id="item-2" value="item-2">
@@ -110,8 +110,9 @@
       <section class="subscribe">
         <h2 class="visually-hidden">Оформить подписку</h2>
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="subscribe-form" action="#" method="post">
-          <input class="subscribe-input" type="text" name="email" placeholder="Электронная почта">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+          <input class="subscribe-input" type="text" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта">
           <input class="button" type="submit" value="Отправить">
         </form>
       </section>
@@ -170,26 +171,32 @@
     </nav>
 
 
-    <form class="search" action="#" method="post">
-      <input class="field" type="text" name="param">
+    <form class="search" action="https://echo.htmlacademy.ru" method="get">
+      <label class="visually-hidden" for="param">Что ищем?</label>
+      <input class="field" type="text" name="param" id="param" placeholder="Что ищем?">
       <input class="visually-hidden" type="submit" value="Найти">
     </form>
 
 
-    <form class="login" action="#" method="post">
-      <input class="field" type="text" name="login" placeholder="Электронная почта">
-      <input class="field" type="password" name="password" placeholder="Пароль">
+    <form class="login" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="login">Электронная почта</label>
+      <input class="field" type="text" name="login" id="login" placeholder="Электронная почта">
+      <label class="visually-hidden" for="password">Пароль</label>
+      <input class="field" type="password" name="password" id="password" placeholder="Пароль">
       <input class="button" type="submit" value="Войти">
       <a class="login-link" href="#">Забыли пароль?</a>
       <a class="login-link" href="#">Новая регистрация</a>
     </form>
 
 
-    <form class="feedback" action="#" method="post">
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
-      <input class="field" type="text" name="name" placeholder="Как вас зовут?">
-      <input class="field" type="text" name="email" placeholder="Ваша почта для ответа?">
-      <textarea class="field" name="message" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <label class="visually-hidden" for="name">Как вас зовут?</label>
+      <input class="field" type="text" name="name" id="name" placeholder="Как вас зовут?">
+      <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
+      <input class="field" type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+      <label class="visually-hidden" for="message">Напишите что-нибудь...</label>
+      <textarea class="field" name="message" id="message" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       <input class="button" type="submit" value="Отправить">
     </form>
 
